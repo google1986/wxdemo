@@ -1,5 +1,4 @@
 // pages/list/list.js
-
 Page({
 
   /**
@@ -29,7 +28,7 @@ Page({
   onShow: function() {
     let that = this;
     wx.request({
-      url: 'http://127.0.0.1:8001/greek/project/listproject',
+      url: 'http://192.168.43.113:8001/greek/project/listproject',
       method: 'GET',
       data: {},
       success: function (res) {
@@ -97,7 +96,7 @@ Page({
       success : function(sm){
         if(sm.confirm){ 
          wx.request({
-           url: 'http://127.0.0.1:8001/greek/project/deleteproject',
+              url: 'http://192.168.43.113:8001/greek/project/deleteproject',
            data:{
              "projectId": e.target.dataset.projectid
            },
