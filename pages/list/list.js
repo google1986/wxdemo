@@ -28,7 +28,7 @@ Page({
   onShow: function() {
     let that = this;
     wx.request({
-      url: 'http://192.168.43.113:8001/greek/project/listproject',
+      url: 'http://192.168.0.100:8001/greek/project/list',
       method: 'GET',
       data: {},
       success: function (res) {
@@ -85,7 +85,7 @@ Page({
   },
   addProject : function(){
     wx.navigateTo({
-      url: '../operation/operation',
+      url: '../project/add/add',
     })
   },
   deleteProject : function(e){
@@ -96,7 +96,7 @@ Page({
       success : function(sm){
         if(sm.confirm){ 
          wx.request({
-              url: 'http://192.168.43.113:8001/greek/project/deleteproject',
+              url: 'http://192.168.0.100:8001/greek/project/delete',
            data:{
              "projectId": e.target.dataset.projectid
            },

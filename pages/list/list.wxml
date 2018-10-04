@@ -16,7 +16,7 @@
           <text class='column'>{{item.projectType}}</text>
           <text class='column'>{{item.reporter}}</text>
           <view class='link-column'>
-            <navigator class='link' url='../operation/operation?projectId={{item.projectId}}'>编辑</navigator>|
+            <navigator class='link' url='../project/add/add?projectId={{item.projectId}}'>编辑</navigator>|
             <text class='link' bindtap='deleteProject' data-projectid='{{item.projectId}}' data-projectname='{{item.projectName}}' data-index='{{index}}'>删除</text>
           </view>
         </view>
