@@ -51,6 +51,9 @@ Page({
                                    duration: 2000
                               })
                               // 这里修改成跳转的页面
+                              wx.redirectTo({
+                                   url: '../list/list'
+                              })
                          } else {
                               wx.showToast({
                                    title: '登录失败',
