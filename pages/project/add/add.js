@@ -8,8 +8,8 @@ Page({
           projectId: undefined,
           projectName: '',
           projectType: '',
-          addUrl: 'http://192.168.0.100:8001/greek/project/add',
-          modifyUrl: 'http://192.168.0.100:8001/greek/project/modify'
+          addUrl: 'http://10.0.4.88:8001/greek/project/add',
+          modifyUrl: 'http://10.0.4.88:8001/greek/project/modify'
 
      },
 
@@ -26,7 +26,7 @@ Page({
                return;
           }
           wx.request({
-               url: 'http://192.168.0.100:8001/greek/project/getProjectById',
+               url: 'http://10.0.4.88:8001/greek/project/getProjectById',
                data: {
                     "projectId": options.projectId
                },

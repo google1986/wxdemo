@@ -28,6 +28,6 @@
   display: table-cell;
 }
 .link{
-  color: blue;
+  color: black;
   display: inline-table;
 }

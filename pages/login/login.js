@@ -29,7 +29,7 @@ Page({
                })
           } else {
                wx.request({
-                    url: 'http://192.168.0.100:8001/greek/user/login',
+                    url: 'http://10.0.4.88:8001/greek/user/login',
                     method: "POST",
                     header: {
                          "Content-Type": "application/x-www-form-urlencoded"

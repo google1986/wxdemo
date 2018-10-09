@@ -28,7 +28,7 @@ Page({
   onShow: function() {
     let that = this;
     wx.request({
-      url: 'http://192.168.0.100:8001/greek/project/list',
+      url: 'http://10.0.4.88:8001/greek/project/list',
       method: 'GET',
       data: {},
       success: function (res) {
@@ -96,7 +96,7 @@ Page({
       success : function(sm){
         if(sm.confirm){ 
          wx.request({
-              url: 'http://192.168.0.100:8001/greek/project/delete',
+              url: 'http://10.0.4.88:8001/greek/project/delete',
            data:{
              "projectId": e.target.dataset.projectid
            },
